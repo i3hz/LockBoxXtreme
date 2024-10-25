@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Setup{% endblock %}
+{% block content %}
+<div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md">
+    <h2 class="text-2xl font-bold mb-6">Setup Master Password</h2>
+    <form method="POST" class="space-y-4">
+        <div>
+            <label class="block text-gray-700 mb-2">Master Password</label>
+            <input type="password" name="master_password" class="w-full p-2 border rounded" required>
+            <p class="text-sm text-gray-600 mt-1">Password must be 8+ characters with uppercase, lowercase, numbers, and special characters.</p>
+        </div>
+        <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Set Password</button>
+    </form>
+</div>
+{% endblock %}
